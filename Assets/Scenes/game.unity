@@ -439,6 +439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilmove: {fileID: 1762031477}
+  cooldown: 0
 --- !u!1 &437652674
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,7 +973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aa09d5a43b490046b974c2b22f0b459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilespeed: 0.2
+  projectilespeed: 5
 --- !u!1001 &2501571804445501412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -983,19 +984,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1142344201477097895, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8086
+      value: 5.9989147
       objectReference: {fileID: 0}
     - target: {fileID: 1142344201477097895, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
       propertyPath: m_LocalScale.y
-      value: -2.7326
+      value: -5.4698796
+      objectReference: {fileID: 0}
+    - target: {fileID: 1142344201477097895, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9885
       objectReference: {fileID: 0}
     - target: {fileID: 1142344201477097895, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8
+      value: -7.3486
       objectReference: {fileID: 0}
     - target: {fileID: 1142344201477097895, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.61
+      value: -2.5885
       objectReference: {fileID: 0}
     - target: {fileID: 1142344201477097895, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1003,19 +1008,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1142344201477097895, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.012710259
       objectReference: {fileID: 0}
     - target: {fileID: 1142344201477097895, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1142344201477097895, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1142344201477097895, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.99991924
       objectReference: {fileID: 0}
     - target: {fileID: 1142344201477097895, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1027,8 +1032,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1142344201477097895, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 181.457
       objectReference: {fileID: 0}
+    - target: {fileID: 2974054072778136842, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2159322684064288486, guid: 8d00a09f2d150184eadfc16349d5bda3, type: 3}
     - target: {fileID: 6879332782204979812, guid: f7bd87c28df95884090c2b1a608f4d2f, type: 3}
       propertyPath: m_Name
       value: ProjectilePrefab

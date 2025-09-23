@@ -10,7 +10,7 @@ public class playerprojectilescript : MonoBehaviour
     
     public projectilescript projectilmove;
 
-    
+    public float cooldown;     
 
     public void Start()
     {
@@ -21,14 +21,15 @@ public class playerprojectilescript : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && cooldown <= 0)
         {
             var postion = transform.position + transform.forward;
             var rotation = transform.rotation;
             var projectile = Instantiate(projectilmove, postion, rotation);
-
+            cooldown = 0.5f;
         }
 
+        cooldown -= Time.deltaTime;
 
 
     }

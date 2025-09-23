@@ -4,6 +4,8 @@ using UnityEngine;
 public class projectilescript : MonoBehaviour
 {
 
+    [SerializeField] private float projectilespeed;
+
     private Rigidbody2D projectilebody;
 
     private void Awake()
@@ -13,11 +15,9 @@ public class projectilescript : MonoBehaviour
 
     }
 
-    public void fire(float speed, Vector3 direction)
+    private void Update()
     {
-
-        projectilebody.linearVelocity = direction * speed; 
-
+        transform.Translate(Vector3.up * Time.deltaTime * projectilespeed);
     }
 
 

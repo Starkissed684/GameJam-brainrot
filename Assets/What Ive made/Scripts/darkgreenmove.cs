@@ -17,7 +17,8 @@ public class darkgreenmove : MonoBehaviour
     {
         if (collision.gameObject.tag == "wall")
         {
-            darkgreen.linearVelocity = darkgreen.linearVelocity * new Vector2(-1,1);
+            darkgreen.linearVelocity = darkgreen.linearVelocity * new Vector2(-1, 1);
+            Debug.Log("touched wall");
         }
     }
 

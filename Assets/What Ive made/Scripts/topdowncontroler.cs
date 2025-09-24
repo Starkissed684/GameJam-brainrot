@@ -6,7 +6,7 @@ public class topdowncontroler : MonoBehaviour
 {
 
     InputAction moveAction;
-    public Rigidbody2D body; 
+    public Rigidbody2D body;
 
     public float walkspeed;
     public float framerate;
@@ -19,6 +19,7 @@ public class topdowncontroler : MonoBehaviour
     {
         moveAction = InputSystem.actions.FindAction("move");
 
+        
 
     }
 
@@ -27,11 +28,16 @@ public class topdowncontroler : MonoBehaviour
     {
 
         move = moveAction.ReadValue<Vector2>();
-
         move *= walkspeed;
+        //transform.Translate(new Vector3(move.x, move.y, 0) * Time.deltaTime);
 
-        transform.Translate(new Vector3(move.x, move.y, 0) * Time.deltaTime);
+        body.linearVelocity = move;
 
+    }
 
+    void FixedUpdate()
+    {
+       
+        
     }
 }

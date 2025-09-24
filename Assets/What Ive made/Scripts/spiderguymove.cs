@@ -24,15 +24,5 @@ public class spiderguymove : MonoBehaviour
         }
 
     }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "bullet")
-        {
-
-            Debug.Log("bullet hit");
-        }
-
-    }
     
 }

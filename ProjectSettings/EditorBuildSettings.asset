@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/game.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/losescreen.unity
+    guid: d9ea4a5ee700abf47847e59665b1b3a1
+  - enabled: 1
+    path: Assets/Scenes/title.unity
+    guid: 314edb4b0ede16747b97490316d464db
+  - enabled: 1
+    path: Assets/Scenes/winscreen.unity
+    guid: 7d9692a38a2947e458edd09f83ca6f8c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

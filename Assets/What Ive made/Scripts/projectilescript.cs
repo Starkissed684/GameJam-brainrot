@@ -15,6 +15,16 @@ public class projectilescript : MonoBehaviour
         projectilebody = GetComponent<Rigidbody2D>();
 
     }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "enimie")
+        {
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+            Debug.Log("hit enimie");
+        }
+
+    }
 
     private void Update()
     {

@@ -7,11 +7,9 @@ TagManager:
   - wall
   - mepw
   - bullet
-  - lightgreen
-  - darkgreen
-  - spiderguy
   - player
   - enimie bullet
+  - enimie
   layers:
   - Default
   - TransparentFX

@@ -1,5 +1,7 @@
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 
 public class topdowncontroler : MonoBehaviour
@@ -35,22 +37,10 @@ public class topdowncontroler : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "darkgreen")
+        if (collision.gameObject.tag == "enimie")
         {
+            SceneManager.LoadScene("losescreen");
 
-            Debug.Log("hit darkgreen");
-        }
-
-        if (collision.gameObject.tag == "lightgreen")
-        {
-
-            Debug.Log("hit lightgreen");
-        }
-
-        if (collision.gameObject.tag == "spiderguy")
-        {
-
-            Debug.Log("hit spiderguy");
         }
 
     }

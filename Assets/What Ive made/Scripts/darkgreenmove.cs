@@ -29,11 +29,6 @@ public class darkgreenmove : MonoBehaviour
             Debug.Log("touched left wall");
         }
 
-        if (collision.gameObject.tag == "bullet")
-        {
-            
-            Debug.Log("bullet hit");
-        }
     }
 
 

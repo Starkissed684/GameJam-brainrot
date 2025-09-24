@@ -11,7 +11,7 @@ public class spiderguymove : MonoBehaviour
         spider = GetComponent<Rigidbody2D>();
 
         spider.linearVelocity = Vector2.down;
-        
+
     }
 
     // Update is called once per frame
@@ -24,4 +24,15 @@ public class spiderguymove : MonoBehaviour
         }
 
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "bullet")
+        {
+
+            Debug.Log("bullet hit");
+        }
+
+    }
+    
 }

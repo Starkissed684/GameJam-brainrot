@@ -6,6 +6,12 @@ TagManager:
   tags:
   - wall
   - mepw
+  - bullet
+  - lightgreen
+  - darkgreen
+  - spiderguy
+  - player
+  - enimie bullet
   layers:
   - Default
   - TransparentFX

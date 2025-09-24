@@ -9,8 +9,6 @@ public class topdowncontroler : MonoBehaviour
     public Rigidbody2D body;
 
     public float walkspeed;
-    public float framerate;
-
     Vector2 move;
 
 
@@ -32,6 +30,28 @@ public class topdowncontroler : MonoBehaviour
         //transform.Translate(new Vector3(move.x, move.y, 0) * Time.deltaTime);
 
         body.linearVelocity = move;
+
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "darkgreen")
+        {
+
+            Debug.Log("hit darkgreen");
+        }
+
+        if (collision.gameObject.tag == "lightgreen")
+        {
+
+            Debug.Log("hit lightgreen");
+        }
+
+        if (collision.gameObject.tag == "spiderguy")
+        {
+
+            Debug.Log("hit spiderguy");
+        }
 
     }
 

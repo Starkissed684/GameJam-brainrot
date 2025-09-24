@@ -11,6 +11,7 @@ public class projectilescript : MonoBehaviour
     private void Awake()
     {
 
+        // need to make it so projectile spawns just above player or make Istrigger work
         projectilebody = GetComponent<Rigidbody2D>();
 
     }

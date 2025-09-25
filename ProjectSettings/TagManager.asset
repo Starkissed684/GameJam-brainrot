@@ -10,6 +10,7 @@ TagManager:
   - player
   - enimie bullet
   - enimie
+  - win
   layers:
   - Default
   - TransparentFX

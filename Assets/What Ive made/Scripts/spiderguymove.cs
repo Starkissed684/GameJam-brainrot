@@ -10,7 +10,7 @@ public class spiderguymove : MonoBehaviour
 
         spider = GetComponent<Rigidbody2D>();
 
-        spider.linearVelocity = Vector2.down;
+        spider.linearVelocity = Vector2.down * 2;
 
     }
 
@@ -18,7 +18,7 @@ public class spiderguymove : MonoBehaviour
     void Update()
     {
 
-        if (transform.position.y <= 0.6f)
+        if (transform.position.y <= 0.4f)
         {
             spider.linearVelocity = Vector2.zero;
         }

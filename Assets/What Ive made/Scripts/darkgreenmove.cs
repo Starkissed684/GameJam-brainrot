@@ -12,7 +12,7 @@ public class darkgreenmove : MonoBehaviour
     {
         darkgreen = GetComponent<Rigidbody2D>();
 
-        darkgreen.linearVelocity = new UnityEngine.Vector2 (1, -1);
+        darkgreen.linearVelocity = new UnityEngine.Vector2 (1, -1) * 2;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -20,13 +20,13 @@ public class darkgreenmove : MonoBehaviour
         if (collision.gameObject.tag == "mepw")
         {
             darkgreen.linearVelocity = new UnityEngine.Vector2 (-1, -1);
-            Debug.Log("touched right wall");
+            //Debug.Log("touched right wall");
         }
 
         if (collision.gameObject.tag == "wall")
         {
             darkgreen.linearVelocity = new UnityEngine.Vector2 (1, -1);
-            Debug.Log("touched left wall");
+            //Debug.Log("touched left wall");
         }
 
     }

@@ -1,9 +1,9 @@
 using System.Xml.Serialization;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class projectilescript : MonoBehaviour
 {
-
     [SerializeField] private float projectilespeed;
 
     private Rigidbody2D projectilebody;
@@ -19,6 +19,7 @@ public class projectilescript : MonoBehaviour
     {
         if (collision.gameObject.tag == "enimie")
         {
+            GetComponent<AudioSource>().Play();
             Destroy(collision.gameObject);
             Destroy(this.gameObject);
             Debug.Log("hit enimie");

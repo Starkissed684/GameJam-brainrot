@@ -10,7 +10,7 @@ public class Enimie1controls : MonoBehaviour
     {
         lightgreen = GetComponent<Rigidbody2D>();
 
-        lightgreen.linearVelocity = Vector2.down;
+        lightgreen.linearVelocity = Vector2.down * 2;
     }
 
 

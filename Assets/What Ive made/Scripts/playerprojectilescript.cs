@@ -3,11 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class playerprojectilescript : MonoBehaviour
-{
-
-    InputAction projectilemove; 
-
-    
+{    
     public projectilescript projectilmove;
 
     public float cooldown;     
